@@ -7,5 +7,12 @@ class CoffeeShop:
 
     def increase_till(self, amount):
         self.till += amount
+    
+    def check_age(self, customer):
+        print(customer.__dict__)
+        if customer.age >= 16:
+            return True
+        else:
+            return False
 
     
